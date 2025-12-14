@@ -12,8 +12,8 @@ A minimal, deterministic utility for checking whether a value is exactly `None`.
 It exists to make intent unambiguous in codebases where clarity, correctness, and
 long-term maintainability are prioritised.
 
-The behavior is deliberately trivial and fully specified. There is no coercion, no
-interpretation of truthiness, and no behavior beyond an identity comparison against
+The behaviour is deliberately trivial and fully specified. There is no coercion, no
+interpretation of truthiness, and no behaviour beyond an identity comparison against
 the singleton `None`.
 
 This package is suitable for production use, testing utilities, and type-sensitive
@@ -26,7 +26,7 @@ environments.
 - **Explicit semantics**  
   The function performs an identity comparison (`value is None`) and nothing else.
 
-- **Deterministic behavior**  
+- **Deterministic behaviour**  
   The result depends solely on object identity. There are no side effects.
 
 - **Minimal surface area**  
@@ -118,7 +118,7 @@ The following are explicitly out of scope for this project:
 * Providing aliases such as `is_not_none`
 * Supporting custom sentinel values
 * Treating falsy values as equivalent to `None`
-* Adding configuration, flags, or environment-based behavior
+* Adding configuration, flags, or environment-based behaviour
 * Expanding into a general-purpose validation or typing library
 
 If your use case requires any of the above, this package is likely not a good fit.
@@ -138,7 +138,7 @@ No breaking changes are anticipated.
 
 * Python **3.13+**
 * Platform-independent
-* No reliance on implementation-specific behavior
+* No reliance on implementation-specific behaviour
 
 ---
 
