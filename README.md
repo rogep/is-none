@@ -10,7 +10,7 @@ A minimal, deterministic utility for checking whether a value is exactly `None`.
 
 `is-none` provides a single, explicit function for identity-based `None` checks in Python.
 It exists to make intent unambiguous in codebases where clarity, correctness, and
-long-term maintainability are prioritized.
+long-term maintainability are prioritised.
 
 The behavior is deliberately trivial and fully specified. There is no coercion, no
 interpretation of truthiness, and no behavior beyond an identity comparison against
@@ -105,7 +105,7 @@ if is_none(value):
 This can be particularly useful in:
 
 * shared utility libraries
-* validation and normalization layers
+* validation and normalisation layers
 * testing and assertion helpers
 * codebases with strict linting or typing requirements
 
