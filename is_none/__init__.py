@@ -11,30 +11,7 @@ Goals:
 
 from __future__ import annotations
 
+from .is_none import is_none
+from ._version_ import __version__
+
 __all__ = ["is_none", "__version__"]
-__version__ = "0.1.0"
-
-from typing import Any
-
-
-def is_none(value: Any) -> bool:
-    """
-    Return True if ``value`` is exactly ``None`` (identity comparison),
-    otherwise return False.
-
-    Rationale
-    ---------
-    Use identity comparison (`is`) because it's the only reliable
-    test for the singleton None. This intentionally does not treat
-    other "falsy" values (0, "", False, []) as None.
-
-    Examples
-    --------
-    >>> is_none(None)
-    True
-    >>> is_none(0)
-    False
-    >>> is_none("")
-    False
-    """
-    return value is None
